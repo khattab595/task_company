@@ -64,13 +64,13 @@ class Validation {
     return null;
   }
 
-  static String? validateSaleNumber(String value) {
-    final strings = injector<ServicesLocator>().strings;
-    if (value.isEmpty) {
-      return strings.this_field_is_required;
-    } else if (value.length != 6) {
-      return strings.point_sale_number_must_be_6_digits;
-    }
-    return null;
-  }
+  // static String? validateSaleNumber(String value) {
+  //   final strings = injector<ServicesLocator>().strings;
+  //   if (value.isEmpty) {
+  //     return strings.this_field_is_required;
+  //   } else if (value.length != 6) {
+  //     return strings.point_sale_number_must_be_6_digits;
+  //   }
+  //   return null;
+  // }
 }
