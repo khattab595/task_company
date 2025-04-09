@@ -22,7 +22,10 @@ class BoldText extends StatelessWidget {
       label,
       textAlign: textAlign,
       style: labelStyle ??
-          context.titleLarge.copyWith(fontSize: fontSize ?? 16, color: labelColor, fontWeight: FontWeight.bold),
+          context.titleLarge.copyWith(
+              fontSize: fontSize ?? 16,
+              color: labelColor,
+              fontWeight: FontWeight.bold),
     );
   }
 }
@@ -49,8 +52,8 @@ class SemiBoldText extends StatelessWidget {
       label,
       textAlign: textAlign,
       style: labelStyle ??
-          context.bodyLarge.copyWith(
-              fontSize: fontSize ?? 16, color: labelColor),
+          context.bodyLarge
+              .copyWith(fontSize: fontSize ?? 16, color: labelColor),
     );
   }
 }
@@ -79,7 +82,10 @@ class MediumText extends StatelessWidget {
       textAlign: textAlign,
       maxLines: 2,
       style: labelStyle ??
-          context.bodyMedium.copyWith(fontSize: fontSize ?? 16, color: labelColor,overflow:TextOverflow.ellipsis ),
+          context.bodyMedium.copyWith(
+              fontSize: fontSize ?? 16,
+              color: labelColor,
+              overflow: TextOverflow.ellipsis),
     );
   }
 }
@@ -106,7 +112,8 @@ class RegularText extends StatelessWidget {
       label,
       textAlign: textAlign,
       style: labelStyle ??
-          context.titleSmall.copyWith(fontSize: fontSize ?? 16, color: labelColor),
+          context.titleSmall
+              .copyWith(fontSize: fontSize ?? 16, color: labelColor),
     );
   }
 }
@@ -133,7 +140,8 @@ class RegularHintText extends StatelessWidget {
       label,
       textAlign: textAlign,
       style: labelStyle ??
-          context.displaySmall.copyWith(fontSize: fontSize ?? 16, color: labelColor),
+          context.displaySmall
+              .copyWith(fontSize: fontSize ?? 16, color: labelColor),
     );
   }
 }
@@ -161,7 +169,8 @@ class SemiBoldHintText extends StatelessWidget {
       maxLines: 3,
       textAlign: textAlign,
       style: labelStyle ??
-          context.displayLarge.copyWith(fontSize: fontSize ?? 16, color: labelColor),
+          context.displayLarge
+              .copyWith(fontSize: fontSize ?? 16, color: labelColor),
     );
   }
 }
