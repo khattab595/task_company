@@ -30,8 +30,8 @@ class LoginScreen extends BaseStatelessWidget {
           children: [
             150.ph,
             BoldText(
-            label:  strings.sign_in,
-             fontSize: 24,
+              label: strings.sign_in,
+              fontSize: 24,
             ),
             40.ph,
             CustomTextField(
