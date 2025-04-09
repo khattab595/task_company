@@ -19,10 +19,15 @@ class CartScreen extends BaseStatelessWidget {
     return Column(
       children: [
         Expanded(
-          child: ListView.builder(
-              itemBuilder: (context, index) =>
-                  CartItem(data: data[index], onRefresh: onRefresh),
-              itemCount: data.length),
+          child: (data.isEmpty)
+              ? Center(child: MediumText(label: strings.empty_list,fontSize: 14,))
+              : ListView.builder(
+                  itemCount: data.length,
+                  itemBuilder: (context, index) => CartItem(
+                    data: data[index],
+                    onRefresh: onRefresh,
+                  ),
+                ),
         ),
         Container(
           decoration:
@@ -31,9 +36,11 @@ class CartScreen extends BaseStatelessWidget {
           height: 60,
           child: Row(
             children: [
-               Expanded(
+              Expanded(
                 child: RegularText(
-                    label: strings.total, labelColor: Colors.white, fontSize: 20),
+                    label: strings.total,
+                    labelColor: Colors.white,
+                    fontSize: 20),
               ),
               RegularHintText(
                   label: totalPrice(data).toString(), labelColor: Colors.white),

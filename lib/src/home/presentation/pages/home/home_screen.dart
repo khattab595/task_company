@@ -1,5 +1,6 @@
 import 'package:app/src/home/presentation/widgets/item_product.dart';
 
+import '../../../../../core/widgets/texts/texts.dart';
 import '../../../../main_index.dart';
 import '../../../data/models/product_dto.dart';
 
@@ -10,9 +11,12 @@ class HomeScreen extends BaseStatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: home.length,
-      itemBuilder: (context, index) => ItemProduct(data: home[index]),
-    );
+    return (home.isEmpty)
+        ? Center(child: MediumText(label: strings.empty_list,fontSize: 14,))
+        : ListView.builder(
+            itemCount: home.length,
+            itemBuilder: (context, index) {
+              return ItemProduct(data: home[index]);
+            });
   }
 }
