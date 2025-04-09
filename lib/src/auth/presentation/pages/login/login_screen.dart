@@ -1,4 +1,5 @@
 import 'package:app/core/resources/validation.dart';
+import 'package:app/core/widgets/texts/texts.dart';
 import '../../../../../core/widgets/text-field/custom_text_field.dart';
 import '../../../../main_index.dart';
 import '../../../data/models/login_params.dart';
@@ -28,9 +29,9 @@ class LoginScreen extends BaseStatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             150.ph,
-            Text(
-              strings.sign_in,
-              style: context.bodyLarge
+            BoldText(
+            label:  strings.sign_in,
+              labelStyle: context.bodyLarge
                   .copyWith(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             40.ph,
@@ -48,7 +49,7 @@ class LoginScreen extends BaseStatelessWidget {
             ),
             PrimaryButton(
               title: strings.login,
-              margin: 30.paddingTop,
+              margin: 100.paddingTop,
               onPressed: () => onPressed(),
             ),
           ],

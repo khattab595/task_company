@@ -74,7 +74,7 @@ class CustomTextField extends BaseStatelessWidget {
                   ? bodyMedium.copyWith(fontSize: 15)
                   : displayMedium.copyWith(fontSize: 15),
             ),
-            0.ph,
+            7.ph,
           ],
           SizedBox(
             height: minHeight,

@@ -158,7 +158,7 @@ class SemiBoldHintText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       label,
-      maxLines: 2,
+      maxLines: 3,
       textAlign: textAlign,
       style: labelStyle ??
           context.displayLarge.copyWith(fontSize: fontSize ?? 16, color: labelColor),
