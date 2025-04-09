@@ -34,7 +34,7 @@ class Validation {
 
   static String? validateRequired(String value) {
     if (value.isEmpty) {
-      return 'This field is required';
+      return 'Enter a valid password';
     }
     return null;
   }

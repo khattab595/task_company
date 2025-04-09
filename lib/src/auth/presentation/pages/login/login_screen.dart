@@ -37,7 +37,7 @@ class LoginScreen extends BaseStatelessWidget {
             CustomTextField(
               controller: emailController,
               title: strings.email,
-              keyboardType: TextInputType.phone,
+              keyboardType: TextInputType.emailAddress,
               validator: (value) => Validation.validateEmail(value ?? ''),
             ),
             CustomTextField(
