@@ -3,7 +3,6 @@ import '../../src/cart/presentation/cart/pages/cart_page.dart';
 import '../../src/home/presentation/pages/home/home_page.dart';
 import '../../src/main_index.dart';
 import '../../src/nav_bar/presentation/pages/main_navgation_bar.dart';
-import '../../src/profile/presentation/pages/profile_page.dart';
 
 class Routes {
   static const String intro = '/';
@@ -19,7 +18,7 @@ class Routes {
     loginPage: (context) => LoginPage(),
     navigationPages: (context) => NavigationBarPage(),
     homePage: (context) => HomePage(),
-    profile: (context) => ProfilePage(),
+
     /* ====================================================================== */
     cartPage: (context) => CartPage(),
   };

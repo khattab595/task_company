@@ -10,9 +10,9 @@ class AuthCubit extends BaseCubit {
 
   AuthCubit(this.repo);
 
- void login(LoginParams params) async {
-   executeSuccessState(() => repo.login(params));
-  }
+ // void login(LoginParams params) async {
+ //   executeSuccessState(() => repo.login(params));
+ //  }
 
 
 }

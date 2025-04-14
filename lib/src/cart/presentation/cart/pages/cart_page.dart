@@ -28,7 +28,7 @@ class CartPage
 
   @override
   String? title(BuildContext context) {
-    return "Cart";
+    return strings.cart;
   }
 
 

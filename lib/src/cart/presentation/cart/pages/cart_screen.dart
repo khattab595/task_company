@@ -21,29 +21,38 @@ class CartScreen extends BaseStatelessWidget {
         Expanded(
           child: (data.isEmpty)
               ? Center(child: MediumText(label: strings.empty_list,fontSize: 14,))
-              : ListView.builder(
-                  itemCount: data.length,
-                  itemBuilder: (context, index) => CartItem(
-                    data: data[index],
-                    onRefresh: onRefresh,
-                  ),
-                ),
+              : GridView.builder(
+      padding: 8.paddingHoriz,
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 2,
+        childAspectRatio: 0.69,
+      ),
+      itemCount: data.length,
+      itemBuilder: (context, index) {
+        return CartItem( data: data[index],
+          onRefresh: onRefresh,);
+      },
+    ),
+
+
         ),
         Container(
           decoration:
-              Decorations.baseDecorationRadius(color: Colors.red, radius: 0),
+              Decorations.baseDecorationRadius(color: AppColors.primaryColor, radius: 0),
           padding: 20.paddingHoriz,
           height: 60,
           child: Row(
             children: [
+
               Expanded(
-                child: RegularText(
-                    label: strings.total,
-                    labelColor: Colors.white,
-                    fontSize: 20),
+                child: RegularHintText(
+                    label: totalPrice(data).toString(), labelColor: Colors.white),
               ),
-              RegularHintText(
-                  label: totalPrice(data).toString(), labelColor: Colors.white),
+              RegularText(
+                  label: strings.total,
+                  labelColor: Colors.white,
+                  fontSize: 20),
             ],
           ),
         )

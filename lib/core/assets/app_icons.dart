@@ -5,6 +5,7 @@ class AppIcons{
   static const String cart = "assets/icons/cart.svg";
   static const String account = "assets/icons/account.svg";
   static const String logout = "assets/icons/logout.svg";
+  static const String carts = "assets/icons/status_up.svg";
 
 
 

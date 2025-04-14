@@ -1,7 +1,7 @@
 import 'package:app/src/home/data/models/product_dto.dart';
 import '../../../../../core/utils/helper_methods.dart';
+import '../../../../home/presentation/widgets/public_item.dart';
 import '../../../../main_index.dart';
-import '../../../../shared/shared_item.dart';
 
 class CartItem extends BaseStatelessWidget {
   final ProductDto data;
@@ -16,7 +16,7 @@ class CartItem extends BaseStatelessWidget {
   bool isFavorite = false;
   @override
   Widget build(BuildContext context) {
-    return SharedItem(onPressed: onPressed,icon: Icons.remove, data: data,);
+    return PublicItem(onPressed: onPressed,icon: Icons.delete, data: data,);
   }
 
 

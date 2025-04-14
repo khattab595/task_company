@@ -9,9 +9,9 @@ import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
- import '../../src/home/data/models/product_dto.dart';
+ import '../../src/auth/models/profile_dto.dart';
+import '../../src/home/data/models/product_dto.dart';
 import '../../src/main_index.dart';
-import '../../src/profile/data/models/profile_dto.dart';
 
 class HelperMethods {
   static Future<CroppedFile?> getImagePicker() async {

@@ -1,7 +1,7 @@
 import 'package:app/src/home/data/models/product_dto.dart';
+import 'package:app/src/home/presentation/widgets/public_item.dart';
 import '../../../../core/utils/helper_methods.dart';
 import '../../../main_index.dart';
-import '../../../shared/shared_item.dart';
 
 class ItemProduct extends BaseStatelessWidget {
   final ProductDto data;
@@ -10,7 +10,7 @@ class ItemProduct extends BaseStatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SharedItem(onPressed: onPressed,icon: Icons.add, data: data,);
+    return PublicItem(onPressed: onPressed,icon: Icons.shopping_cart, data: data,);
   }
 
   onPressed() async {

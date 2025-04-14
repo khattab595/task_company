@@ -46,7 +46,7 @@ class AppColors {
   static Color appIconLightStarColor = const Color.fromRGBO(242, 201, 76, 1);
   static Color appSwitchThumbColor = const Color.fromRGBO(33, 150, 83, 1);
   static Color appSwitchTrackColor = const Color.fromRGBO(13, 60, 33, 1);
-
+  static Color primaryColor = const Color(0xff005EAD);
   static Color appButtonTextColor = const Color.fromRGBO(255, 255, 255, 1);
   static Color appButtonBlackColor = const Color.fromRGBO(0, 0, 0, 1);
   static Color appButtonLightBlackColor = const Color.fromRGBO(37, 37, 37, 1);
