@@ -15,7 +15,7 @@ class Routes {
 
   static final routes = <String, Widget Function(BuildContext)>{
     loginPage: (context) => LoginPage(),
-     homePage: (context) => HomePage(),
+     homePage: (context) => ProductPage(),
 
     /* ====================================================================== */
     cartPage: (context) => CartPage(),

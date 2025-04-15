@@ -36,7 +36,7 @@ class PublicItem extends BaseStatelessWidget {
                 end: 0,
                 child: CircleAvatar(
                   radius: 14,
-                  backgroundColor: errorColor,
+                  backgroundColor: primaryColor,
                   child: IconButton(
                     padding: EdgeInsets.zero,
                     iconSize: 20,

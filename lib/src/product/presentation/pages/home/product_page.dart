@@ -4,9 +4,9 @@ import '../../../../main_index.dart';
 import '../../bloc/home_bloc.dart';
 import 'product_screen.dart';
 
-class HomePage
+class ProductPage
     extends BaseBlocWidget<DataSuccess<List<ProductDto>>, HomeCubit> {
-  HomePage({Key? key}) : super(key: key);
+  ProductPage({Key? key}) : super(key: key);
 
   @override
   void loadInitialData(BuildContext context) {
@@ -15,13 +15,18 @@ class HomePage
 
   @override
   Widget build(BuildContext context) {
-    return AppScaffold(
-      appBar: AppBar(title: Text(strings.product)),
-      leading: IconButton(
-        onPressed: () {
-        Navigator.pushNamed(context, Routes.cartPage);
-        },
-        icon: const Icon(Icons.shopping_cart),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(strings.product),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pushNamed(context, Routes.cartPage);
+          },
+          icon: const Icon(
+            Icons.shopping_cart,
+            color: Colors.black,
+          ),
+        ),
       ),
       body: buildConsumer(context),
     );

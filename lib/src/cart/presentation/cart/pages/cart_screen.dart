@@ -38,20 +38,18 @@ class CartScreen extends BaseStatelessWidget {
 
         ),
         Container(
-          decoration:
-              Decorations.baseDecorationRadius(color: AppColors.primaryColor, radius: 0),
-          padding: 20.paddingHoriz,
+                    padding: 20.paddingHoriz,
           height: 60,
           child: Row(
             children: [
 
               Expanded(
                 child: RegularHintText(
-                    label: totalPrice(data).toString(), labelColor: Colors.white),
+                    label: totalPrice(data).toString(),  ),
               ),
               RegularText(
                   label: strings.total,
-                  labelColor: Colors.white,
+
                   fontSize: 20),
             ],
           ),

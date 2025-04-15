@@ -89,19 +89,19 @@ class AppScaffold extends StatelessWidget {
                     ),
                   ),
                 ],
-                // leading: leading ?? (isDrawer!
-                //     ? AppIconButton(
-                //   icon: AppIcons.menu,
-                //   padding: 10.paddingStart,
-                //   onPressed: () {
-                //     if (globalKey.currentState?.isDrawerOpen == false) {
-                //       globalKey.currentState?.openDrawer();
-                //     } else {
-                //       globalKey.currentState?.openEndDrawer();
-                //     }
-                //   },
-                // )
-                //     : null),
+                leading: leading ?? (isDrawer!
+                    ? AppIconButton(
+                  icon: AppIcons.menu,
+                  padding: 10.paddingStart,
+                  onPressed: () {
+                    if (globalKey.currentState?.isDrawerOpen == false) {
+                      globalKey.currentState?.openDrawer();
+                    } else {
+                      globalKey.currentState?.openEndDrawer();
+                    }
+                  },
+                )
+                    : null),
               ),
     );
   }

@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
                   routes: Routes.routes,
                   initialRoute: token == null || token == ""
                       ? Routes.loginPage
-                      : Routes.navigationPages,
+                      : Routes.homePage,
                 );
         },
       ),
