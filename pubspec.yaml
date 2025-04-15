@@ -143,14 +143,14 @@ flutter_native_splash:
   android: true
   ios: true
   color: "#ffffff"
-  background_image: "assets/logo/splash.png"
+  background_image: "assets/logo/logo.png"
   android_12:
-    background_image: "assets/logo/splash.png"
+    background_image: "assets/logo/logo.png"
 
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/logo/splash.png"
+  image_path: "assets/logo/logo.png"
 
 # The following section is specific to Flutter packages.
 flutter:
@@ -158,7 +158,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/logo/splash.png
+    - assets/logo/logo.png
     - assets/icons/
     - assets/images/
     - assets/logo/
