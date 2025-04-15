@@ -1,6 +1,6 @@
 
 import '../../../../../core/components/base_widget_bloc.dart';
-import '../../../../home/data/models/product_dto.dart';
+import '../../../../product/data/models/product_dto.dart';
 import '../../../../main_index.dart';
 import '../cubit/cart_bloc.dart';
 import 'cart_screen.dart';

@@ -63,8 +63,7 @@ class HeaderInterceptor extends Interceptor {
       // final status = data.containsKey('status') ? data['status'] : 400;
       final message = data.containsKey('message') ? data['message'] : "Error";
       if (err.response?.statusCode == 403 || err.response?.statusCode == 401) {
-        HelperMethods.clearCashData();
-        Navigators.pushReplacementNamed(Routes.loginPage);
+         Navigators.pushReplacementNamed(Routes.loginPage);
       }
       throw ApiException(message, err.response?.statusCode ?? 400);
     } else {

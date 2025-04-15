@@ -11,10 +11,10 @@ class DateTimeButton extends StatelessWidget {
     String data = '';
     return InkWell(
       onTap: () async{
-        data  = await HelperMethods.datePicker(context);
-        final dataFormat = HelperMethods.formatDate(data);
-        streamStateInitial.setData(dataFormat);
-        onDateSelected(dataFormat);
+        // data  = await HelperMethods.datePicker(context);
+        // final dataFormat = HelperMethods.formatDate(data);
+        // streamStateInitial.setData(dataFormat);
+        // onDateSelected(dataFormat);
       },
       child: StreamBuilder<String>(
         stream: streamStateInitial.stream,

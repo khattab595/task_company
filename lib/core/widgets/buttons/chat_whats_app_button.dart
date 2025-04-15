@@ -17,7 +17,7 @@ class ChatWhatsAppButton extends BaseStatelessWidget {
         icon: AppIcons.whatsapp,
         color: theme.colorScheme.secondaryContainer,
         onPressed: () {
-          HelperMethods.launchWhatsApp(phone);
+       //   HelperMethods.launchWhatsApp(phone);
         },
       ),
     );

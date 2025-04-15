@@ -1,14 +1,12 @@
-import 'package:app/src/home/data/models/product_dto.dart';
+import 'package:app/src/product/data/models/product_dto.dart';
 import 'package:injectable/injectable.dart';
 
-import '../../../../core/utils/helper_methods.dart';
-import '../../domain/repositories/home_repo.dart';
+ import '../../domain/repositories/home_repo.dart';
 import '../data_sources/home_datasource.dart';
-import 'dart:convert';
 
 @Injectable(as: HomeRepo)
 class HomeRepoImp extends HomeRepo {
-  final HomeDatasource datasource;
+  final ProductDatasource datasource;
   HomeRepoImp(this.datasource);
 
   @override
@@ -24,10 +22,4 @@ class HomeRepoImp extends HomeRepo {
   }
 
 
-
-
-  List<ProductDto> parseProducts(String responseBody) {
-    final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
-    return parsed.map<ProductDto>((json) => ProductDto.fromJson(json)).toList();
-  }
 }

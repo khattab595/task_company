@@ -1,5 +1,9 @@
-import '../../data/models/login_params.dart';
+
+ import '../../data/models/login_params.dart';
+import '../../data/models/profile_dto.dart';
+
 
 abstract class AuthRepo {
-//  Future<Profile> login(LoginParams params);
+  Future<ProfileDto> login(LoginParams params);
+
 }

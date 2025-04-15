@@ -1,4 +1,4 @@
-import 'package:app/src/home/domain/repositories/home_repo.dart';
+import 'package:app/src/product/domain/repositories/home_repo.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../core/bloc/base_cubit.dart';
@@ -9,7 +9,7 @@ class HomeCubit extends BaseCubit {
 
   HomeCubit(this.repo);
 
-  fetchHomeData() async {
+  fetchProduct() async {
     executeSuccess(() => repo.fetchProducts());
   }
 }

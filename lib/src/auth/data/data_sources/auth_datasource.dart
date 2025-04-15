@@ -1,10 +1,10 @@
-import 'package:dio/dio.dart';
+ import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:app/core/utils/constants.dart';
 import 'package:app/src/auth/data/models/login_params.dart';
 
-import '../../models/profile_dto.dart';
+import '../models/profile_dto.dart';
 
 
 part 'auth_datasource.g.dart';

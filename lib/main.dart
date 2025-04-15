@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:app/core/utils/helper_methods.dart';
-import 'package:app/src/home/data/models/product_dto.dart';
+import 'package:app/src/product/data/models/product_dto.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hive_flutter/adapters.dart';
@@ -25,8 +25,8 @@ Future<void> main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(ProductDtoAdapter());
   Hive.registerAdapter(RatingAdapter());
-  await Hive.openBox('authBox');
-  await Hive.openBox<List>('productListBox');
+  await Hive.openBox('auth');
+  await Hive.openBox<List>('productsList');
 
   await configureDependencies();
 

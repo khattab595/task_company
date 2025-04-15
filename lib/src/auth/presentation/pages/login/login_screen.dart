@@ -1,5 +1,7 @@
+
 import 'package:app/core/resources/validation.dart';
-import 'package:app/core/widgets/texts/texts.dart';
+import 'package:app/core/widgets/images/logo.dart';
+
 import '../../../../../core/widgets/text-field/custom_text_field.dart';
 import '../../../../main_index.dart';
 import '../../../data/models/login_params.dart';
@@ -16,7 +18,7 @@ class LoginScreen extends BaseStatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (kDebugMode) {
+    if(kDebugMode){
       emailController.text = 'eve.holt@reqres.in';
       passwordController.text = 'cityslicka';
     }
@@ -28,16 +30,17 @@ class LoginScreen extends BaseStatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            150.ph,
-            BoldText(
-              label: strings.sign_in,
-              fontSize: 24,
+150.ph,
+             Text(
+              strings.sign_in,
+              style: context.bodyLarge.copyWith(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             40.ph,
+
             CustomTextField(
               controller: emailController,
               title: strings.email,
-              keyboardType: TextInputType.emailAddress,
+              keyboardType: TextInputType.phone,
               validator: (value) => Validation.validateEmail(value ?? ''),
             ),
             CustomTextField(
@@ -46,9 +49,10 @@ class LoginScreen extends BaseStatelessWidget {
               isPassword: true,
               keyboardType: TextInputType.visiblePassword,
             ),
+
             PrimaryButton(
               title: strings.login,
-              margin: 100.paddingTop,
+              margin: 30.paddingTop,
               onPressed: () => onPressed(),
             ),
           ],
@@ -60,7 +64,7 @@ class LoginScreen extends BaseStatelessWidget {
   onPressed() async {
     if (formKey.currentState!.validate()) {
       onLogin!(LoginParams(
-        email: emailController.text,
+        email:  emailController.text,
         password: passwordController.text,
       ));
     }

@@ -1,6 +1,6 @@
-import 'package:app/src/home/data/models/product_dto.dart';
+import 'package:app/src/product/data/models/product_dto.dart';
 import '../../../../../core/utils/helper_methods.dart';
-import '../../../../home/presentation/widgets/public_item.dart';
+import '../../../../product/presentation/widgets/public_item.dart';
 import '../../../../main_index.dart';
 
 class CartItem extends BaseStatelessWidget {

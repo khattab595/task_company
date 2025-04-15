@@ -17,7 +17,7 @@ class LoginPage extends BaseBlocWidget<UnInitState, AuthCubit> {
   Widget buildWidget(BuildContext context, UnInitState state) {
     return LoginScreen(
       onLogin: (LoginParams params) {
-    //    bloc.login(params);
+        bloc.login(params);
       },
     );
   }

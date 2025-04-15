@@ -1,8 +1,8 @@
-import 'package:app/src/home/data/models/product_dto.dart';
+import 'package:app/src/product/data/models/product_dto.dart';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 @Injectable( )
-class HomeDatasource {
+class ProductDatasource {
   final Dio dio = Dio();
 
   Future<List<ProductDto>> fetchProduct() async {

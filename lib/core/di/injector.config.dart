@@ -18,12 +18,11 @@ import '../../src/auth/data/repositories/auth_repo_imp.dart' as _i6;
 import '../../src/auth/domain/repositories/auth_repo.dart' as _i5;
 import '../../src/auth/presentation/bloc/auth_bloc.dart' as _i18;
 import '../../src/cart/presentation/cart/cubit/cart_bloc.dart' as _i7;
-import '../../src/home/data/data_sources/home_datasource.dart' as _i8;
-import '../../src/home/data/repositories/home_repo_imp.dart' as _i10;
-import '../../src/home/domain/repositories/home_repo.dart' as _i9;
-import '../../src/home/presentation/bloc/home_bloc.dart' as _i19;
-import '../../src/nav_bar/presentation/bloc/nav_bar_bloc.dart' as _i12;
-import '../../src/settings/data/data_sources/settings_datasource.dart' as _i13;
+import '../../src/product/data/data_sources/home_datasource.dart' as _i8;
+import '../../src/product/data/repositories/home_repo_imp.dart' as _i10;
+import '../../src/product/domain/repositories/home_repo.dart' as _i9;
+import '../../src/product/presentation/bloc/home_bloc.dart' as _i19;
+ import '../../src/settings/data/data_sources/settings_datasource.dart' as _i13;
 import '../../src/settings/data/repositories/settings_repo_imp.dart' as _i15;
 import '../../src/settings/domain/repositories/settings_repo.dart' as _i14;
 import '../../src/settings/presentation/bloc/about_logeste_bloc.dart' as _i17;
@@ -45,11 +44,8 @@ Future<_i1.GetIt> $initGetIt(
   gh.factory<_i3.AuthDataSource>(() => _i3.AuthDataSource(gh<_i4.Dio>()));
   gh.factory<_i5.AuthRepo>(() => _i6.AuthRepoImp(gh<_i3.AuthDataSource>()));
   gh.factory<_i7.CartCubit>(() => _i7.CartCubit());
-  gh.factory<_i8.HomeDatasource>(() => _i8.HomeDatasource());
-  gh.factory<_i9.HomeRepo>(() => _i10.HomeRepoImp(gh<_i8.HomeDatasource>()));
-  gh.factory<_i11.LanguageCubit>(() => _i11.LanguageCubit());
-  gh.factory<_i12.NavBarState>(() => _i12.NavBarState());
-  gh.factory<_i13.SettingsDatasource>(
+   gh.factory<_i11.LanguageCubit>(() => _i11.LanguageCubit());
+   gh.factory<_i13.SettingsDatasource>(
       () => _i13.SettingsDatasource(gh<_i4.Dio>()));
   gh.factory<_i14.SettingsRepo>(
       () => _i15.SettingsRepoImp(gh<_i13.SettingsDatasource>()));

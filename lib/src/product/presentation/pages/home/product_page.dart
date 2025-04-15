@@ -1,8 +1,8 @@
-import 'package:app/src/home/data/models/product_dto.dart';
+import 'package:app/src/product/data/models/product_dto.dart';
 import '../../../../../core/components/base_widget_bloc.dart';
 import '../../../../main_index.dart';
 import '../../bloc/home_bloc.dart';
-import 'home_screen.dart';
+import 'product_screen.dart';
 
 class HomePage
     extends BaseBlocWidget<DataSuccess<List<ProductDto>>, HomeCubit> {
@@ -10,13 +10,19 @@ class HomePage
 
   @override
   void loadInitialData(BuildContext context) {
-    bloc.fetchHomeData();
+    bloc.fetchProduct();
   }
 
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
       appBar: AppBar(title: Text(strings.product)),
+      leading: IconButton(
+        onPressed: () {
+        Navigator.pushNamed(context, Routes.cartPage);
+        },
+        icon: const Icon(Icons.shopping_cart),
+      ),
       body: buildConsumer(context),
     );
   }
@@ -28,5 +34,4 @@ class HomePage
       home: state.data!,
     );
   }
-
 }

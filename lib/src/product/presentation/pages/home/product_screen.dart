@@ -1,4 +1,4 @@
-import 'package:app/src/home/presentation/widgets/item_product.dart';
+import 'package:app/src/product/presentation/widgets/item_product.dart';
 import '../../../../../core/widgets/texts/texts.dart';
 import '../../../../main_index.dart';
 import '../../../data/models/product_dto.dart';

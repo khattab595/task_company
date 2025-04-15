@@ -24,7 +24,7 @@ class AppColors {
   static Color appTextSecondColor = const Color.fromRGBO(148, 150, 153, 1);
   static Color appTextThirdColor = const Color.fromRGBO(108, 108, 108, 1);
   static Color appTextFourthColor = const Color.fromRGBO(211, 211, 211, 1);
-  static Color appTextRedColor = const Color.fromRGBO(220, 54, 46, 1);
+  static Color appTextRedColor = const Color.fromRGBO(52, 46, 220, 1.0);
   static Color appTextOrangeColor = const Color.fromRGBO(246, 125, 49, 1);
   static Color appTextLittleRedColor = const Color.fromRGBO(235, 87, 87, 1);
   static Color appTextGreenColor = const Color.fromRGBO(33, 150, 83, 1);
@@ -50,7 +50,7 @@ class AppColors {
   static Color appButtonTextColor = const Color.fromRGBO(255, 255, 255, 1);
   static Color appButtonBlackColor = const Color.fromRGBO(0, 0, 0, 1);
   static Color appButtonLightBlackColor = const Color.fromRGBO(37, 37, 37, 1);
-  static Color appButtonRedColor = const Color.fromRGBO(220, 54, 46, 1);
+  static Color appButtonRedColor = const Color.fromRGBO(28, 71, 179, 1.0);
   static Color appButtonGreenColor = const Color.fromRGBO(33, 150, 83, 1);
   static Color appButtonLightGreenColor = const Color.fromRGBO(233, 245, 238, 1);
   static Color appButtonOrangeColor = const Color.fromRGBO(246, 125, 49, 1);
@@ -60,7 +60,7 @@ class AppColors {
 
 const kPrimaryDark = Color(0xff000000);
 const kPrimaryLight = Color(0xffffffff);
-const kErrorColor = Color(0xffDC362E);
+const kErrorColor = Color(0xff2e37dc);
 const kGreenColor = Color(0xff219653);
 const kBackgroundColor = Color(0xffE3E5E6);
 const kBorderColor = Color(0xffD3D3D3);

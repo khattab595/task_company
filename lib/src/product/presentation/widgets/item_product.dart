@@ -1,5 +1,5 @@
-import 'package:app/src/home/data/models/product_dto.dart';
-import 'package:app/src/home/presentation/widgets/public_item.dart';
+import 'package:app/src/product/data/models/product_dto.dart';
+import 'package:app/src/product/presentation/widgets/public_item.dart';
 import '../../../../core/utils/helper_methods.dart';
 import '../../../main_index.dart';
 

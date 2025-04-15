@@ -1,5 +1,5 @@
 import '../../../../../core/widgets/texts/texts.dart';
-import '../../../../home/data/models/product_dto.dart';
+import '../../../../product/data/models/product_dto.dart';
 import '../../../../main_index.dart';
 import '../widgets/cart_item.dart';
 
